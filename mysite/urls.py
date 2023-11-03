@@ -21,5 +21,5 @@ from polls.views import hello_rest_api
 urlpatterns = [
     path("polls/", include("polls.urls")),
     path("admin/", admin.site.urls),
-    path("api/hello/", hello_rest_api, name="hello_rest_api"),
+    path("api/", include('fine_tuning_chatbot.urls')),
 ]
